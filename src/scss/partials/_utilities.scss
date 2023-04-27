@@ -2,7 +2,6 @@
 
 // Classe ht
 .ht{
-  // La & riprende il nome della classe genitore, scrivendo accanto una stringa specifichiamo tutte le variazioni della classe genitore, ad esempio il primo &-0 significa che la classe ht-0 avrà la regola height: 0; e così via
   &-0{
     height: 0;
   }

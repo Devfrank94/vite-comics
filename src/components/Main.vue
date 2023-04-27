@@ -11,11 +11,11 @@ export default {
 </script>
 <template>
 
-  <body class="ht-70">
+  <body class="ht-70 d-flex">
 
-    <div class="container d-flex j-cont-cent">
+    <div class="container d-flex j-cont-cent al-item-cent">
   
-    <h1>  Content goes here  </h1>
+    <h2 class=""> &#8674; Content goes here &#8672; </h2>
   
     </div>
     
@@ -34,7 +34,7 @@ export default {
     background-color: $fmblack;
   }
 
-  h1{
+  h2{
     color: white;
   }
 
