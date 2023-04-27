@@ -93,7 +93,7 @@ const footerMenu = {
       text: "Shop DC Collectibles",
     }
   ],
-  
+
   dc: [
     {
       href: "#",
@@ -166,4 +166,27 @@ const footerMenu = {
 
 }
 
-export {mainMenu, footerMenu};
+const socialMenu = [
+  {
+    img: "../src/assets/img/footer-facebook.png",
+    href: "#"
+  },
+  {
+    img: "../src/assets/img/footer-twitter.png",
+    href: "#"
+  },
+  {
+    img: "../src/assets/img/footer-youtube.png",
+    href: "#"
+  },
+  {
+    img: "../src/assets/img/footer-pinterest.png",
+    href: "#"
+  },
+  {
+    img: "../src/assets/img/footer-periscope.png",
+    href: "#"
+  }
+]
+
+export {mainMenu, footerMenu, socialMenu};

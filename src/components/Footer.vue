@@ -1,13 +1,13 @@
 <script>
 
 // per importare dati dalla cartella data in cui ci sono database
-import {footerMenu} from "../data/menus";
+import {footerMenu, socialMenu} from "../data/menus";
 export default {
   name: "Footer",
   data(){
     return{
-      // mainMenu,
-      footerMenu
+      footerMenu,
+      socialMenu
     }
   }
 }
@@ -86,7 +86,7 @@ export default {
           </div>
         </div>
 
-        <div class="rigth">
+        <div class="right">
 
         </div>
 
@@ -94,9 +94,19 @@ export default {
     </div>
 
     <div class="background-bottom">
-      <div class="container">  
-        <div class="foot-bottom">
-        <h1>ciao 3</h1>
+      <div class="container d-flex j-cont-bet">
+        <div class="foot-bott-left">
+          <span>sign-up now!</span>
+        </div>
+        <div class="foot-bott-right">
+          <span>follow us</span>
+          <nav>
+              <ul>
+                <li v-for="(icon, index) in menuSocial" :key="index">
+                  <a :href="icon.href"><img :src="icon.img"></a>
+                </li>
+              </ul>
+            </nav>
         </div>
       </div>
     </div>
@@ -129,31 +139,38 @@ export default {
       .container{
         height: 100%;
 
-        .col{
+        .categories{
 
-          margin: .8rem;
+          margin: 2.5rem;
 
-          li{
-
-            a{
-              color: $fmgray;
-              font-size: .7rem;
-              font-weight: 700;
+          .col{
+  
+            margin: .8rem;
+  
+            li{
+  
+              a{
+                color: $fmgray;
+                font-size: .7rem;
+                font-weight: 700;
+              }
+  
             }
-
-          }
-
-          h4{
-            color: $fmwhite;
-            text-transform: uppercase;
-            margin-bottom: .6rem;
+  
+            h4{
+              color: $fmwhite;
+              text-transform: uppercase;
+              margin: .6rem 0;
+            }
+  
           }
 
         }
 
+
       }
 
-      .rigth{
+      .right{
       background-image: url("../assets/img/dc-logo-bg.png");
       background-position: center;
       background-repeat: no-repeat;
@@ -167,6 +184,36 @@ export default {
 
     .background-bottom{
       background-color: $fmdargray;
+
+      .container{
+
+        .foot-bott-left{
+
+          span{
+            text-transform: uppercase;
+            color: $fmwhite;
+          }
+
+        }
+
+        .foot-bott-right{
+          nav{
+              height: 100%;
+            ul{
+              margin-left: 25px;
+              li:not(:last-child){
+                margin-right: 15px;
+                a:hover{
+                  transition: all .3s;
+                  filter: brightness(60%);
+                }
+              }
+            }
+          }
+        }
+
+      }
+
     }
 
   }
