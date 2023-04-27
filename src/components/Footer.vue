@@ -44,16 +44,27 @@ export default {
     </div>
 
     <div class="background-center">
-      <div class="container">  
-        <div class="categories">
-        
+      <div class="container d-flex j-cont-bet">  
+        <div class="categories d-flex">
+        <ul>
+          <li>fds</li>
+          <li>sdfsa</li>
+          <li>dafda</li>
+          <li>fadfategyeqwgeq</li>
+          <li>adfa</li>
+        </ul>
         </div>
+
+        <div class="rigth">
+
+        </div>
+
       </div>
     </div>
 
     <div class="background-bottom">
       <div class="container">  
-        <div class="foot-cottom">
+        <div class="foot-bottom">
         <h1>ciao 3</h1>
         </div>
       </div>
@@ -80,10 +91,25 @@ export default {
 
     .background-center{
       background-image: url('../assets/img/footer-bg.jpg');
-      height: 300px;  //da togliere
+      height: 370px;
       background-repeat: no-repeat;
-      // background-position: center;
+      background-size: cover;
+
+      .container{
+        height: 100%;
+      }
+
+      .rigth{
+      background-image: url("../assets/img/dc-logo-bg.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 60%;
+      height: 100%;
     }
+
+
+    
+  }
 
     .background-bottom{
       background-color: $fmdargray;
