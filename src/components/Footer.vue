@@ -128,6 +128,29 @@ export default {
 
       .container{
         height: 100%;
+
+        .col{
+
+          margin: .8rem;
+
+          li{
+
+            a{
+              color: $fmgray;
+              font-size: .7rem;
+              font-weight: 700;
+            }
+
+          }
+
+          h4{
+            color: $fmwhite;
+            text-transform: uppercase;
+            margin-bottom: .6rem;
+          }
+
+        }
+
       }
 
       .rigth{
