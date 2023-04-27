@@ -10,7 +10,16 @@ export default {
 
 </script>
 <template>
-  <h1>Main</h1>
+
+  <body class="ht-70">
+
+    <div class="container d-flex j-cont-cent">
+  
+    <h1>  Content goes here  </h1>
+  
+    </div>
+    
+  </body>
 
 
   
@@ -19,6 +28,14 @@ export default {
 
 <style lang="scss" scoped>
 
-  @use '../scss/main.scss';
+  @use '../scss/main.scss' as *;
+
+  body{
+    background-color: $fmblack;
+  }
+
+  h1{
+    color: white;
+  }
 
 </style>

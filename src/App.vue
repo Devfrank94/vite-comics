@@ -15,12 +15,12 @@ export default {
 }
 </script>
 <template>
-  <h1>APP</h1>
+
 
   <Header />
 
   <Main />
-
+  
   <Footer />
 
   
