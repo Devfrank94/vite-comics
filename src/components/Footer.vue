@@ -1,13 +1,13 @@
 <script>
 
 // per importare dati dalla cartella data in cui ci sono database
-//import {mainMenu, footerMenu} from "../data/menus";
+import {footerMenu} from "../data/menus";
 export default {
   name: "Footer",
   data(){
     return{
       // mainMenu,
-      // footerMenu
+      footerMenu
     }
   }
 }
@@ -46,13 +46,44 @@ export default {
     <div class="background-center">
       <div class="container d-flex j-cont-bet">  
         <div class="categories d-flex">
-        <ul>
-          <li>fds</li>
-          <li>sdfsa</li>
-          <li>dafda</li>
-          <li>fadfategyeqwgeq</li>
-          <li>adfa</li>
-        </ul>
+          <div class="col">
+            <h4>dc comics</h4>
+            <nav>
+              <ul>
+                <li v-for="(link, index) in footerMenu.dcComics" :key="index">
+                  <a href="">{{link.text}}</a>
+                </li>
+              </ul>
+            </nav>
+            <h4>shop</h4>
+            <nav>
+              <ul>
+                <li v-for="(link, index) in footerMenu.shop" :key="index">
+                  <a href="">{{link.text}}</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col">
+            <h4>dc</h4>
+            <nav>
+              <ul>
+                <li v-for="(link, index) in footerMenu.dc" :key="index">
+                  <a href="">{{link.text}}</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col">
+            <h4>sites</h4>
+            <nav>
+              <ul>
+                <li v-for="(link, index) in footerMenu.sites" :key="index">
+                  <a href="">{{link.text}}</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
 
         <div class="rigth">

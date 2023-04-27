@@ -93,7 +93,7 @@ const footerMenu = {
       text: "Shop DC Collectibles",
     }
   ],
- 
+  
   dc: [
     {
       href: "#",
