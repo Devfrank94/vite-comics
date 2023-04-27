@@ -21,7 +21,7 @@ export default {
 
 
 <style lang="scss" scoped>
-  @use './scss/main.scss';
+  @use '../scss/main.scss';
 
 
 </style>
