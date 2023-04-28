@@ -20,7 +20,7 @@ export default {
   <body>
 
     
-    <div class="container d-flex">
+    <div class="container d-flex j-cont-cent">
       
       <div id="currseries">current series</div>
 
@@ -31,8 +31,8 @@ export default {
         <img :src="comic.thumb">
         <span>{{comic.series}}</span>
       </div>
-  
-    
+
+      <span class="load-blue">load more</span>
   
     </div>
     
@@ -50,7 +50,7 @@ export default {
   .jumbotron{
     background-image: url(../assets/img/jumbotron.jpg);
     height: 300px;
-  background-size: cover;
+    background-size: cover;
   }
 
   body{
@@ -62,10 +62,21 @@ export default {
 
     position: relative;
     flex-wrap: wrap;
+    padding-bottom: 2rem;
+
+    .load-blue{
+      color: $fmwhite;
+      background-color: $fmcyan;
+      padding: .6rem 2.2rem;
+      text-transform: uppercase;
+      font-size: .7rem;
+      font-weight: 600;
+      margin-top: 3rem;
+    }
 
     .card{
       width: calc(100% / 6);
-      margin: 1.5rem 0;
+      margin-top: 2.5rem;
       padding: 0 10px;
       color: $fmwhite;
 
