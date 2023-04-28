@@ -11,11 +11,18 @@ export default {
 </script>
 <template>
 
-  <body class="ht-70 d-flex">
+  
+  <div class="jumbotron">
+    
+  </div>
+  <body>
+
+    <div id="currseries">current series</div>
 
     <div class="container d-flex al-item-cent">
+
   
-    <h2 class=""> &#8674; Content goes here &#8672; </h2>
+    
   
     </div>
     
@@ -30,8 +37,29 @@ export default {
 
   @use '../scss/main.scss' as *;
 
+  .jumbotron{
+    background-image: url(../assets/img/jumbotron.jpg);
+    height: 300px;
+  background-size: cover;
+  }
+
   body{
     background-color: $fmblack;
+    height: 600px;
+    position: relative;
+
+    #currseries{
+      position: absolute;
+      top: -25px;
+      left: 490px;
+      background-color: $fmcyan;
+      text-transform: uppercase;
+      color: $fmwhite;
+      font-weight: 600;
+      font-size: 1.5rem;
+      padding: .6rem;
+    }
+
   }
 
   h2{
