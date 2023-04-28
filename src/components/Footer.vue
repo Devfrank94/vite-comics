@@ -100,9 +100,9 @@ export default {
         </div>
         <div class="foot-bott-right d-flex al-item-cent j-cont-cent">
           <span>follow us</span>
-          <nav>
-              <ul>
-                <li v-for="(icon, index) in menuSocial" :key="index">
+          <nav class="d-flex al-item-cent">
+              <ul class="d-flex">
+                <li v-for="(icon, index) in socialMenu" :key="index">
                   <a :href="icon.href"><img :src="icon.img"></a>
                 </li>
               </ul>
@@ -216,11 +216,16 @@ export default {
               height: 100%;
             ul{
               margin-left: 25px;
-              li:not(:last-child){
-                margin-right: 15px;
+              li{
+                margin-right: 10px;
+
+                img{
+                  width: 1.7rem;
+                }
+
                 a:hover{
                   transition: all .3s;
-                  // filter: brightness(60%);
+                  filter: brightness(50%);
                 }
               }
             }

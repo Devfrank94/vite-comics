@@ -30,7 +30,6 @@ export default {
 
 </template>
 
-<!-- Al'interno del tag style dobbiamo scrivere lang="scss" per poter utilizzare sass all'interno -->
 <style lang="scss" scoped>
 @use '../scss/main.scss' as *;
 
