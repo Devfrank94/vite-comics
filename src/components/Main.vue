@@ -13,7 +13,7 @@ export default {
 
   <body class="ht-70 d-flex">
 
-    <div class="container d-flex j-cont-cent al-item-cent">
+    <div class="container d-flex al-item-cent">
   
     <h2 class=""> &#8674; Content goes here &#8672; </h2>
   

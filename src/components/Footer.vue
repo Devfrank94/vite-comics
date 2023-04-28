@@ -93,12 +93,12 @@ export default {
       </div>
     </div>
 
-    <div class="background-bottom">
+    <div class="background-bottom d-flex">
       <div class="container d-flex j-cont-bet">
-        <div class="foot-bott-left">
+        <div class="foot-bott-left d-flex al-item-cent j-cont-cent">
           <span>sign-up now!</span>
         </div>
-        <div class="foot-bott-right">
+        <div class="foot-bott-right d-flex al-item-cent j-cont-cent">
           <span>follow us</span>
           <nav>
               <ul>
@@ -141,7 +141,7 @@ export default {
 
         .categories{
 
-          margin: 2.5rem;
+          margin: 2.5rem 0;
 
           .col{
   
@@ -184,19 +184,34 @@ export default {
 
     .background-bottom{
       background-color: $fmdargray;
+      height: 70px;
 
       .container{
+        height: 100%;
 
         .foot-bott-left{
 
           span{
             text-transform: uppercase;
             color: $fmwhite;
+            border: 2px solid $fmcyan;
+            padding: .5rem;
+            font-size: .8rem;
+            font-weight: 500;
           }
 
         }
 
         .foot-bott-right{
+          height: 100%;
+
+          span{
+            text-transform: uppercase;
+            color: $fmcyan;
+            font-size: 1.1rem;
+            font-weight: 800;
+          }
+
           nav{
               height: 100%;
             ul{
@@ -205,7 +220,7 @@ export default {
                 margin-right: 15px;
                 a:hover{
                   transition: all .3s;
-                  filter: brightness(60%);
+                  // filter: brightness(60%);
                 }
               }
             }
