@@ -1,8 +1,12 @@
 <script>
 import Comics from '../data/dc-comics.json';
+import Card from './partials/Card.vue';
 
 export default {
   name:'Main',
+  components:{
+    Card
+  },
   data(){
     return {
     Comics,
@@ -24,13 +28,8 @@ export default {
       
       <div id="currseries">current series</div>
 
-      <div
-        class="card al-item-cent"
-        v-for="(comic, index) in Comics"
-        :key="index">
-        <img :src="comic.thumb">
-        <span>{{comic.series}}</span>
-      </div>
+      <Card v-for="(comic, index) in Comics" :key="index" :name="comic.series" :img="comic.thumb" />
+
 
       <span class="load-blue">load more</span>
   
